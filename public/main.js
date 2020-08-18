@@ -46,6 +46,7 @@ const getInformation = () => {
                     title: metadata.subtitle,
                     icon: metadata.icon ? metadata.icon : null,
                     imageOne: metadata.imageOne ? metadata.imageOne : null,
+                    price: metadata.price,
                     content: content ? content : "No content given",
                 }
                 informationList.push(post)

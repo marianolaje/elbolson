@@ -15,4 +15,5 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Icono - Imagen", name: "icon", widget: "image", required: false}
       - {label: "Imagen 1", name: "imageOne", widget: "image", required: false}
+      - {label: "Precio", name: "price", widget: "number"}
       - {label: "Ingredientes", name: "body", widget: "markdown"}
