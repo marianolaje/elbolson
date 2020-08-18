@@ -43,10 +43,11 @@ const getInformation = () => {
                 const content = parseContent({lines, metadataIndices})
                 post = {
                     id: Math.floor(Math.random() * 100000000000),
-                    title: metadata.subtitle,
+                    title: metadata.title,
                     icon: metadata.icon ? metadata.icon : null,
                     imageOne: metadata.imageOne ? metadata.imageOne : null,
                     price: metadata.price,
+                    url: metadata.url,
                     content: content ? content : "No content given",
                 }
                 informationList.push(post)

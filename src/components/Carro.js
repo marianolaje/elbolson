@@ -2,18 +2,13 @@ import React, {useEffect} from 'react'
 import {useHistory, useLocation} from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import Arrow from '../assets/arrow.png'
-import Logo from '../assets/logo-la-quinta-sin-fondo.png'
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import {ThemeProvider} from "@material-ui/styles";
-import Typography from "@material-ui/core/Typography";
+import SvgIcon from "@material-ui/core/SvgIcon";
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        display: 'flex',
-        position: 'fixed',
-        top: 0,
         zIndex: '99999',
         width: '100%',
         flexWrap: 'wrap',
@@ -30,9 +25,14 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 23,
         fontSize: 30
     },
-    logo: {
-        width: 70,
-        height: 70
+    imagen: {
+        width: 20,
+        height: 20
+    },
+    volver: {
+        position: 'fixed',
+        bottom: '80px',
+        right: '30px',
     }
 }));
 
@@ -46,31 +46,28 @@ const theme = createMuiTheme({
     },
 });
 
-const HeaderComp = ({setInfoBool}) => {
+const Volver = ({setGoCarro}) => {
     const classes = useStyles();
 
     const history = useHistory()
 
-    const goBackButton = () => {
-        history.go(-1)
-        setInfoBool(false)
+    const goShopp = () => {
+        history.push('/cart')
+        setGoCarro(true)
     }
 
     return(
         <ThemeProvider theme={theme}>
-            <header>
+            <div className={classes.volver}>
                 <Paper elevation={2}
-                     className={classes.root}
-                     onClick={goBackButton}
+                       className={classes.root}
+                       onClick={goShopp}
                 >
-                    <img src={Logo} alt="Logo" className={classes.logo}/>
-                    <Typography variant="h6" className={classes.widthBig}>
-                        La Quinta
-                    </Typography>
+                    <SvgIcon component={ShoppingCartIcon} style={{ color: '#D7263D' }} className={classes.imagen} />
                 </Paper>
-            </header>
+            </div>
         </ThemeProvider>
     )
 }
 
-export default HeaderComp
+export default Volver
