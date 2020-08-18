@@ -1,7 +1,7 @@
 const path = require("path")
 const fs = require("fs")
 
-const dirInformationPath = path.join(__dirname, "../src/info/information")
+const dirInformationPath = path.join(__dirname, "../src/info")
 let informationList = []
 
 
@@ -55,7 +55,7 @@ const getInformation = () => {
                         return a.id < b.id ? 1 : -1
                     })
                     let data = JSON.stringify(sortedList)
-                    fs.writeFileSync("src/mocks/infoJson/information.json", data)
+                    fs.writeFileSync("src/mocks/information.json", data)
                 }
             })
         })
