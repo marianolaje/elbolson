@@ -1,1 +1,38 @@
-[{"id":82405955647,"title":"Bolson Medio","icon":null,"imageOne":null,"price":"600","content":"(2kg) Papines, (5kg) Brocoli, (2kg) Paprika"},{"id":15972396165,"title":"Bolsón Completo","icon":"/images/pagos.png","imageOne":"/images/socio.png","price":"900","content":"(5kg) Papas, (2kg) Zanahoria, (500g) Lechuga, (1kg) Milanesas"}]
+[
+  {
+    "id": 82405955647,
+    "title": "Bolson Medio",
+    "icon": null,
+    "imageOne": null,
+    "price": "600",
+    "url": "/bolson-completo",
+    "content": "(2kg) Papines, (5kg) Brocoli, (2kg) Paprika"
+  },
+  {
+    "id": 15972396165,
+    "title": "Bolsón Completo",
+    "icon": "/images/pagos.png",
+    "imageOne": "/images/socio.png",
+    "price": "900",
+    "url": "/bolson-medioDos",
+    "content": "(5kg) Papas, (2kg) Zanahoria, (500g) Lechuga, (1kg) Milanesas"
+  },
+  {
+    "id": 82405955647,
+    "title": "Bolson Medio",
+    "icon": null,
+    "imageOne": null,
+    "price": "600",
+    "url": "/bolson-completoDos",
+    "content": "(2kg) Papines, (5kg) Brocoli, (2kg) Paprika"
+  },
+  {
+    "id": 15972396165,
+    "title": "Bolsón Completo",
+    "icon": "/images/pagos.png",
+    "imageOne": "/images/socio.png",
+    "price": "900",
+    "url": "/bolson-medio",
+    "content": "(5kg) Papas, (2kg) Zanahoria, (500g) Lechuga, (1kg) Milanesas"
+  }
+]

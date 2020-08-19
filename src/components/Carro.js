@@ -36,6 +36,16 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+const theme = createMuiTheme({
+    typography: {
+        fontFamily: [
+            '"Lato"',
+            '"Roboto"',
+            'sans-serif'
+        ].join(','),
+    },
+});
+
 const Carro = () => {
     const classes = useStyles();
 
