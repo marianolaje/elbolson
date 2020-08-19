@@ -46,18 +46,22 @@ const theme = createMuiTheme({
     },
 });
 
-const Carro = () => {
+const Carro = ({setGoCarro}) => {
     const classes = useStyles();
 
     const history = useHistory()
 
-
+    const goBackButton = () => {
+        history.push('/cart')
+        setGoCarro(true)
+    }
 
     return(
         <ThemeProvider theme={theme}>
             <div className={classes.volvers}>
                 <Paper elevation={2}
                        className={classes.root}
+                       onClick={goBackButton}
                 >
                     <SvgIcon component={ShoppingCartIcon} style={{ color: '#D7263D' }} className={classes.imagens} />
                 </Paper>

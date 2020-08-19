@@ -85,7 +85,7 @@ const Informacion = ({infoData}) => {
         if(info.length !== 0){
             listInfo()
         }
-    }, [info, infoData, listInfo])
+    }, [info])
 
     const listComponent = () => {
         const resultInfo = arrayInfo ?
