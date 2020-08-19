@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-import {useHistory, useLocation} from 'react-router-dom'
+import React from 'react'
+import {useHistory} from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Arrow from '../assets/arrow.png'

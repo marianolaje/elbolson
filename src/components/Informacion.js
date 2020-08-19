@@ -5,7 +5,6 @@ import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import {ThemeProvider} from "@material-ui/styles";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import Producto from "./Producto";
 import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles((theme) => ({
@@ -86,7 +85,7 @@ const Informacion = ({infoData}) => {
         if(info.length !== 0){
             listInfo()
         }
-    }, [info])
+    }, [info, infoData, listInfo])
 
     const listComponent = () => {
         const resultInfo = arrayInfo ?

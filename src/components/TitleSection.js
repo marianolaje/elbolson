@@ -80,10 +80,10 @@ const TitleSection = ({title, setTitle, infoData, setInfoBool, setRealUrl, setGo
     useEffect(()=>{
         knowTitle()
         if(infoArrive(infoData) && !boolControl) setBoolControl(true)
-        if(url != '/'){
+        if(url !== '/'){
             setInfoBool(true)
         }
-        if(url != '/cart'){
+        if(url !== '/cart'){
             setGoCarro(false)
         }
 

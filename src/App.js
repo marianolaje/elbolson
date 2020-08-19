@@ -13,9 +13,6 @@ import Volver from './components/Volver'
 import Compra from './components/Compra'
 
 import infoDataJson from './mocks/information.json'
-import Paper from '@material-ui/core/Paper';
-import Typography           from '@material-ui/core/Typography';
-import ErrorIcon            from '@material-ui/icons/Error';
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import {createStyles} from "@material-ui/core";
 
@@ -62,12 +59,6 @@ const useStyles = makeStyles(theme => createStyles({
 }));
 
 function App() {
-    const {
-        responseContainer,
-        iconFailure,
-        titleTheme,
-        text,
-    } = useStyles();
 
     const [infoData, setInfoData] = useState([])
     const [infoRow, setInfoRow] = useState([])
