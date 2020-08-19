@@ -140,3 +140,4 @@ export default App;
 //TODO:
 // - Agregar el componente de Compra (entero, con formulario y envío de información)
 // - Agregar el botón para sumar items al carro en componente Información
+// - Arreglar la medida (kg - g) en Información, para que se imprima de manera correcta
