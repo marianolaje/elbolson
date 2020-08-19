@@ -90,7 +90,7 @@ const Informacion = ({infoData}) => {
     const listComponent = () => {
         const resultInfo = arrayInfo ?
             arrayInfo.map((infoRow) => (
-                <li>{infoRow}</li>
+                <li key={infoRow}>{infoRow}</li>
             ))
             : null
         return resultInfo
@@ -106,11 +106,9 @@ const Informacion = ({infoData}) => {
                     {
                         info &&
                         (
-                            <Typography variant="body1" className={classes.root}>
                                 <ul>
                                     {listComponent()}
                                 </ul>
-                            </Typography>
                         )
                     }
 
