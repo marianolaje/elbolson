@@ -25,49 +25,35 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 23,
         fontSize: 30
     },
-    imagen: {
+    imagens: {
         width: 20,
         height: 20
     },
-    volver: {
+    volvers: {
         position: 'fixed',
         bottom: '80px',
         right: '30px',
     }
 }));
 
-const theme = createMuiTheme({
-    typography: {
-        fontFamily: [
-            '"Lato"',
-            '"Roboto"',
-            'sans-serif'
-        ].join(','),
-    },
-});
-
-const Volver = ({setGoCarro}) => {
+const Carro = () => {
     const classes = useStyles();
 
     const history = useHistory()
 
-    const goShopp = () => {
-        history.push('/cart')
-        setGoCarro(true)
-    }
+
 
     return(
         <ThemeProvider theme={theme}>
-            <div className={classes.volver}>
+            <div className={classes.volvers}>
                 <Paper elevation={2}
                        className={classes.root}
-                       onClick={goShopp}
                 >
-                    <SvgIcon component={ShoppingCartIcon} style={{ color: '#D7263D' }} className={classes.imagen} />
+                    <SvgIcon component={ShoppingCartIcon} style={{ color: '#D7263D' }} className={classes.imagens} />
                 </Paper>
             </div>
         </ThemeProvider>
     )
 }
 
-export default Volver
+export default Carro
